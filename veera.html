@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P Veerendra Kumar | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: #f1f5f9;
+      line-height: 1.7;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #111c30;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      color: #67e8f9;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    nav a:hover {
+      color: #67e8f9;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .hero h1 {
+      font-size: clamp(35px, 6vw, 60px);
+      margin: 12px 0;
+    }
+
+    .highlight {
+      color: #67e8f9;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #cbd5e1;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 23px;
+      background: #06b6d4;
+      color: #06111f;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px 8px 5px 0;
+    }
+
+    .btn:hover {
+      background: #67e8f9;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 22px;
+    }
+
+    .about, .project, .skill {
+      background: #111c30;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid #26364e;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skill {
+      text-align: center;
+      color: #67e8f9;
+      font-weight: bold;
+    }
+
+    .project h3 {
+      color: #67e8f9;
+      margin-bottom: 10px;
+    }
+
+    .project p, .about p {
+      color: #cbd5e1;
+    }
+
+    .contact p {
+      margin: 12px 0;
+      overflow-wrap: anywhere;
+    }
+
+    .contact a {
+      color: #67e8f9;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #111c30;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">VEERENDRA.</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <p class="highlight">WELCOME TO MY PORTFOLIO</p>
+
+    <h1>Hi, I'm <span class="highlight">
+      P Veerendra Kumar
+    </span></h1>
+
+    <h2>Aspiring Software Developer</h2>
+
+    <p>
+      I am an engineering student passionate about
+      programming, technology, problem-solving, and
+      developing innovative projects.
+    </p>
+
+    <div>
+      <a class="btn" href="#projects">View My Projects</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+      <p>
+        Hello! My name is P Veerendra Kumar.
+        I am an engineering student interested in
+        software development and computer science.
+        I am building my programming skills and
+        learning to create practical technology projects.
+        My goal is to become a skilled software developer
+        and contribute to useful real-world solutions.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="grid">
+      <div class="skill">Python - Learning</div>
+      <div class="skill">C Programming - Learning</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Problem Solving</div>
+      <div class="skill">Data Structures - Learning</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="grid">
+      <div class="project">
+        <h3>Automatic Water Planting System</h3>
+        <p>
+          A proposed project to automate plant watering
+          using soil moisture sensing and a controller.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Rain Detection System</h3>
+        <p>
+          A project concept that detects rainfall using
+          a sensor and can trigger an alert or response.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Student Attendance Analyzer</h3>
+        <p>
+          A project concept to calculate attendance
+          percentages and help students track attendance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <p>
+      Email:
+      <a href="mailto:pveerendra749@gmail.com">
+        pveerendra749@gmail.com
+      </a>
+    </p>
+
+    <p>
+      Mobile:
+      <a href="tel:+919390693733">
+        +91 9390693733
+      </a>
+    </p>
+
+    <a class="btn"
+       href="mailto:pveerendra749@gmail.com">
+      Send Me an Email
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span>
+      P Veerendra Kumar. All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
